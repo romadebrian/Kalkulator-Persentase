@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -62,7 +63,7 @@ Partial Class Form1
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox1.Location = New System.Drawing.Point(193, 102)
+        Me.TextBox1.Location = New System.Drawing.Point(193, 101)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(162, 34)
         Me.TextBox1.TabIndex = 3
@@ -70,7 +71,7 @@ Partial Class Form1
         'TextBox2
         '
         Me.TextBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox2.Location = New System.Drawing.Point(193, 142)
+        Me.TextBox2.Location = New System.Drawing.Point(193, 141)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(162, 34)
         Me.TextBox2.TabIndex = 4
@@ -88,7 +89,7 @@ Partial Class Form1
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Button1.Location = New System.Drawing.Point(39, 192)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(129, 74)
+        Me.Button1.Size = New System.Drawing.Size(129, 75)
         Me.Button1.TabIndex = 6
         Me.Button1.Text = "Calculate"
         Me.Button1.UseVisualStyleBackColor = True
@@ -152,7 +153,7 @@ Partial Class Form1
         'TextBox5
         '
         Me.TextBox5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox5.Location = New System.Drawing.Point(613, 102)
+        Me.TextBox5.Location = New System.Drawing.Point(613, 101)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(141, 34)
         Me.TextBox5.TabIndex = 14
@@ -168,7 +169,7 @@ Partial Class Form1
         'TextBox7
         '
         Me.TextBox7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox7.Location = New System.Drawing.Point(613, 210)
+        Me.TextBox7.Location = New System.Drawing.Point(613, 211)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(141, 34)
         Me.TextBox7.TabIndex = 16
@@ -178,7 +179,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Kalkulator.My.Resources.Resources._91000_los_artistas_de_twitter_celebraron_el_segundo_dia_de_hatsune_miku
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(872, 411)
         Me.Controls.Add(Me.TextBox7)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.TextBox5)
@@ -194,7 +195,11 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Kalkulator Persentase"
         Me.ResumeLayout(False)
         Me.PerformLayout()

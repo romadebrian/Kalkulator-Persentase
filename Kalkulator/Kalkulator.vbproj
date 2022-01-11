@@ -7,6 +7,7 @@
     <StartupObject>Kalkulator.Form1</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <AssemblyName>Kalkulator</AssemblyName>
+    <ApplicationIcon>math_skills_Onf_icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
