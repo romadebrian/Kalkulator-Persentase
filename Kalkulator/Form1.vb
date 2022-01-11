@@ -21,7 +21,6 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim jumlah, jumlahdari, hasil As Double
-        Dim tambahan
 
         If TextBox5.Text = "" Or TextBox6.Text = "" Then
             MessageBox.Show("Tidak boleh ada value yang kosong")
